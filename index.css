@@ -1,0 +1,264 @@
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.min-column {
+	max-width: 80vmin;
+	flex-direction: column;
+}
+
+.wide {
+	width: 100%;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.background {
+	background-color: #2d2d2d;
+}
+
+#front {
+	z-index: 100;
+}
+
+.appear {
+	animation: floatUp ease-out forwards 500ms;
+}
+
+.appear2 {
+	animation: floatUp ease-out forwards 750ms;
+}
+
+.appear3 {
+	animation: floatUpTranslucent ease-out forwards 1000ms;
+}
+
+@keyframes floatUp {
+	0% {
+		transform: translateY(50px);
+		opacity: 0%;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 100%;
+	}
+}
+
+@keyframes floatUpTranslucent {
+	0% {
+		transform: translateY(50px);
+		opacity: 0%;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 90%;
+	}
+}
+
+.textbox {
+	background-color: #7b7b7b;
+	padding: 20px;
+	border-radius: 20px;
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+	gap: 20px
+}
+
+.apart {
+	justify-content: space-between;
+}
+
+.bottom {
+	align-items: end;
+}
+
+.big-font {
+	font-family: sans-serif;
+	font-size: 200%;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.dates-title {
+	font-size: 90%;
+	color: black;
+}
+
+.city {
+	font-size: 60%;
+	color: black;
+}
+
+/* ---------------------------------------- */
+
+#slash-all {
+	z-index: 0;
+}
+
+#slash1 {
+	position: fixed;
+	left: 20%;
+	top: 20%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash2 {
+	position: fixed;
+	left: 25%;
+	top: 40%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash3 {
+	position: fixed;
+	left: 40%;
+	top: 25%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash4 {
+	position: fixed;
+	left: 37%;
+	top: 5%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash5 {
+	position: fixed;
+	left: 65%;
+	top: 50%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash6 {
+	position: fixed;
+	left: 60%;
+	top: 20%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash7 {
+	position: fixed;
+	left: 35%;
+	top: 50%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash8 {
+	position: fixed;
+	left: 55%;
+	top: 10%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash9 {
+	position: fixed;
+	left: 25%;
+	top: 3%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash10 {
+	position: fixed;
+	left: 55%;
+	top: 40%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash11 {
+	position: fixed;
+	left: 20%;
+	top: 80%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash12 {
+	position: fixed;
+	left: 25%;
+	top: 100%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash13 {
+	position: fixed;
+	left: 40%;
+	top: 85%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash14 {
+	position: fixed;
+	left: 37%;
+	top: 65%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash15 {
+	position: fixed;
+	left: 65%;
+	top: 110%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash16 {
+	position: fixed;
+	left: 60%;
+	top: 80%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash17 {
+	position: fixed;
+	left: 35%;
+	top: 110%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash18 {
+	position: fixed;
+	left: 55%;
+	top: 70%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash19 {
+	position: fixed;
+	left: 23%;
+	top: 63%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+#slash20 {
+	position: fixed;
+	left: 55%;
+	top: 100%;
+	animation: slash-animation-1 forwards 500ms;
+}
+
+@keyframes slash-animation-1 {
+	0% {
+		transform: translate(1000px, -300px);
+		opacity: 0%;
+	}
+	
+	60% {
+		transform: translate(1000px, -300px);
+		opacity: 0%;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 100%;
+	}
+}
