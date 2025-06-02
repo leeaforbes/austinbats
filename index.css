@@ -25,6 +25,10 @@
 	z-index: 100;
 }
 
+.image {
+	max-width: 100%;
+}
+
 .appear {
 	animation: floatUp ease-out forwards 500ms;
 }
