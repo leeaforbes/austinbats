@@ -27,6 +27,7 @@
 
 .image {
 	max-width: 100%;
+	filter: drop-shadow(1px 1px 10px white);
 }
 
 .appear {
@@ -70,11 +71,12 @@
 	padding: 20px;
 	border-radius: 20px;
 	width: 100%;
+	filter: drop-shadow(3px 3px 3px white);
 }
 
 .flex {
 	display: flex;
-	gap: 20px
+	gap: 20px;
 }
 
 .apart {
