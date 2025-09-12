@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.center {
+    justify-content: center;
+}
+
 .background {
     margin-top: -10px; /* thats annoying */
     margin-left: -10px; /* thats annoying */
@@ -14,6 +18,12 @@
     width: 110vw;
     height: 110vh;
     position: fixed;
+}
+
+.team-photo {
+    max-height: 50vh;
+    width: 80%;
+    border-radius: 25px;
 }
 
 .content {
@@ -31,12 +41,21 @@
 .image {
     max-width: 100%;
     filter: drop-shadow(1px 1px 10px white);
+    object-fit: scale-down;
 }
 
 .icon {
     width: 64px;
     height: 64px;
+    object-fit: contain;
     border-radius: 15px;
+}
+
+.youtube-icon {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: #2d2d2d;
 }
 
 .appear {
