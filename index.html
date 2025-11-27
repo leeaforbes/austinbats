@@ -1,6 +1,6 @@
-
 <head>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="slash.css" />
 </head>
 
 <div class="background">
@@ -88,16 +88,23 @@
 </div>
 
 <div id="front" class="content">
-    <br />
 
-    <div class="flex">
-        <!-- text image -->
-        <img class="appear image" style="height: 150px;" src="media/austin bats text.png" />
+    <div class="header hstack apart wrap" style="position: sticky; top: 0;">
+        <div class="hstack gap">
+            <div class="button header-button">Home</div>
+            <div class="button header-button">Schedule</div>
+            <div class="button header-button">Media</div>
+        </div>
 
-        <!-- bat image -->
-         <div style="display: flex; flex-direction: column; justify-content: center;">
-             <img class="appear image" style="height: 100px;" src="media/bat logo.png" />
-         </div>
+        <div class="vstack center">
+            <div class="hstack gap">
+                <!-- text image -->
+                <img class="appear-down image text-image" src="media/austin bats text.png" />
+
+                <!-- bat image -->
+                <img class="appear-down image bat-image" src="media/bat logo.png" />
+            </div>
+        </div>
     </div>
 
     <br>

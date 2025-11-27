@@ -1,0 +1,161 @@
+
+#slash-all {
+    z-index: 0;
+}
+
+#slash1 {
+    position: fixed;
+    left: 7%;
+    top: 20%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash2 {
+    position: fixed;
+    left: 15%;
+    top: 40%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash3 {
+    position: fixed;
+    left: 20%;
+    top: 25%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash4 {
+    position: fixed;
+    left: 25%;
+    top: 5%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash5 {
+    position: fixed;
+    left: 85%;
+    top: 50%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash6 {
+    position: fixed;
+    left: 75%;
+    top: 20%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash7 {
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash8 {
+    position: fixed;
+    left: 55%;
+    top: 10%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash9 {
+    position: fixed;
+    left: 15%;
+    top: 3%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash10 {
+    position: fixed;
+    left: 55%;
+    top: 40%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash11 {
+    position: fixed;
+    left: 15%;
+    top: 80%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash12 {
+    position: fixed;
+    left: 17%;
+    top: 100%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash13 {
+    position: fixed;
+    left: 30%;
+    top: 85%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash14 {
+    position: fixed;
+    left: 35%;
+    top: 65%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash15 {
+    position: fixed;
+    left: 75%;
+    top: 110%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash16 {
+    position: fixed;
+    left: 70%;
+    top: 80%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash17 {
+    position: fixed;
+    left: 25%;
+    top: 110%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash18 {
+    position: fixed;
+    left: 55%;
+    top: 70%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash19 {
+    position: fixed;
+    left: 17%;
+    top: 63%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+#slash20 {
+    position: fixed;
+    left: 55%;
+    top: 100%;
+    animation: slash-animation-1 forwards 500ms;
+}
+
+@keyframes slash-animation-1 {
+    0% {
+        transform: translate(1000px, -300px);
+        opacity: 0%;
+    }
+
+    60% {
+        transform: translate(1000px, -300px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
