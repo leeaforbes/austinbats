@@ -54,7 +54,15 @@
 }
 
 .wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-rev {
     flex-wrap: wrap-reverse;
+}
+
+.row-gap {
+    row-gap: 20px;
 }
 
 .min-column {
@@ -74,6 +82,10 @@
     justify-content: space-between;
 }
 
+.end {
+    justify-content: end;
+}
+
 .background {
     margin-top: -10px; /* thats annoying */
     margin-left: -10px; /* thats annoying */
@@ -84,8 +96,8 @@
 }
 
 .team-photo {
-    max-height: 50vh;
-    width: 80%;
+    max-height: 40vh;
+    /* width: 80%; */
     border-radius: 25px;
 }
 
@@ -188,7 +200,7 @@
     background-color: #7b7b7b;
     padding: 20px;
     border-radius: 20px;
-    width: 100%;
+    /* width: 100%; */
     filter: drop-shadow(3px 3px 3px white);
 }
 
@@ -203,6 +215,11 @@
 
 .bottom {
     align-items: end;
+}
+
+.large-text {
+    /* font-size: 1.5rem; */
+    font-size: 1.5vh;
 }
 
 .big-font {
