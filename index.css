@@ -12,6 +12,10 @@
     z-index: 200;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header-button {
     background-color: yellow;
     padding: 10px 15px;
@@ -20,6 +24,7 @@
     border: 1px solid black;
     border-radius: 1vh;
     font-size: 2vh;
+    color: black;
 }
 
 .text-image {
@@ -87,8 +92,10 @@
 }
 
 .background {
-    margin-top: -10px; /* thats annoying */
-    margin-left: -10px; /* thats annoying */
+    margin-top: -10px;
+    /* thats annoying */
+    margin-left: -10px;
+    /* thats annoying */
     background-color: #2d2d2d;
     width: 110vw;
     height: 110vh;
