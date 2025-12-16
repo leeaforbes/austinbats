@@ -102,9 +102,28 @@ a {
     position: fixed;
 }
 
+
+.image {
+    /* max-width: 100%; */
+    filter: drop-shadow(1px 1px 3px white);
+    object-fit: scale-down;
+}
+
 .team-photo {
-    max-height: 40vh;
-    /* width: 80%; */
+    max-width: 90%;
+    width: 800px;
+    border-radius: 25px;
+}
+
+.media-photo-landscape {
+    width: 800px;
+    border-radius: 25px;
+}
+
+.media-photo {
+    max-width: 90%;
+    /* max-height: 80%; */
+    width: 600px;
     border-radius: 25px;
 }
 
@@ -123,12 +142,6 @@ a {
 
 #front {
     z-index: 100;
-}
-
-.image {
-    max-width: 100%;
-    filter: drop-shadow(1px 1px 3px white);
-    object-fit: scale-down;
 }
 
 .icon {
