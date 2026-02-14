@@ -1,0 +1,13 @@
+.background {
+    background-color: white;
+    /* gradient background */
+    /* background: linear-gradient(90deg,
+            rgba(255, 255, 0, 0.824),
+            rgb(203, 183, 2),
+            rgba(0, 0, 0, 0.824)); */
+}
+
+img {
+    height: 2rem;
+    width: auto;
+}

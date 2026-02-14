@@ -1,0 +1,43 @@
+:root {
+    --space: 15px;
+}
+
+.vstack {
+    display: flex;
+    flex-direction: column;
+}
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+}
+
+.end {
+    justify-content: end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.apart {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: var(--space);
+}
+
+.pad {
+    padding: var(--space);
+}
+
+button {
+    /* background-color: yellow;
+    border: 1px solid black;
+    padding: var(--space); */
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
