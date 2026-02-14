@@ -11,3 +11,36 @@ img {
     height: 2rem;
     width: auto;
 }
+
+.bat-icon {
+    animation: bat-enter forwards 1000ms;
+}
+
+@keyframes bat-enter {
+    0% {
+        transform: translate(1000px, 0px);
+        opacity: 0%;
+        width: 0;
+    }
+
+    20% {
+        width: 2rem;
+    }
+
+    40% {
+        width: 0;
+    }
+
+    60% {
+        width: 2rem;
+    }
+
+    80% {
+        width: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}

@@ -2,6 +2,11 @@
     --space: 15px;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .vstack {
     display: flex;
     flex-direction: column;
@@ -43,6 +48,8 @@ button {
     font-weight: bold;
     cursor: pointer;
     border-bottom: 2px solid rgb(0, 0, 0, 0);
+
+    animation: float-enter forwards 1000ms;
 }
 
 button:hover {
@@ -93,4 +100,20 @@ a {
 
     color: white;
     text-align: center;
+}
+
+.float-enter {
+    animation: float-enter forwards 1000ms;
+}
+
+@keyframes float-enter {
+    0% {
+        transform: translate(0px, 10px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }
