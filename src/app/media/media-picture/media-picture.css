@@ -1,0 +1,10 @@
+.container {
+    border: 1px solid yellow;
+    color: white;
+    padding: 10px;
+}
+
+img {
+    width: 400px;
+    max-width: 100%;
+}
