@@ -79,6 +79,10 @@ a {
     width: 100%;
 }
 
+.start {
+    justify-content: start;
+}
+
 .center {
     justify-content: center;
 }
