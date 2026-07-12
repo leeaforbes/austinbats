@@ -1,0 +1,252 @@
+/* ── IRF Palette: red #c0392b | blue #1a5fa8 | green #1e8a3c | accent #f0c000 ── */
+
+/* ── Page shell ── */
+.cm-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0.75rem 4rem;
+  box-sizing: border-box;
+  width: 100%;
+  color: #1a1a1a;
+}
+
+/* ── Header ── */
+.cm-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(to right, #c0392b 33%, #1a5fa8 33% 66%, #1e8a3c 66%) 1;
+}
+
+.cm-back {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a5fa8;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  transition: color 0.15s ease;
+}
+
+.cm-back:hover {
+  color: #174f8e;
+}
+
+.cm-header h1 {
+  font-size: 1.9rem;
+  margin: 0 0 0.35rem;
+  line-height: 1.2;
+}
+
+.cm-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ── Card grid ── */
+.cm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Card ── */
+.cm-card {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cm-card--diagram {
+  grid-column: 1 / -1;
+  align-items: center;
+}
+
+/* ── Card titles ── */
+.cm-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.5rem 0.85rem;
+  border-radius: 5px;
+  color: #fff;
+  background: #1a1a1a;
+  align-self: flex-start;
+}
+
+.cm-card-title--red   { background: #c0392b; }
+.cm-card-title--blue  { background: #1a5fa8; }
+.cm-card-title--green { background: #1e8a3c; }
+
+/* ── Rule reference ── */
+.cm-rule-ref {
+  font-size: 0.78rem;
+  color: #888;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Table ── */
+.cm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin-top: 0.25rem;
+}
+
+.cm-table thead tr {
+  background: #f4f4f4;
+}
+
+.cm-table th {
+  text-align: left;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.cm-table td {
+  padding: 0.45rem 0.65rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+  vertical-align: top;
+}
+
+.cm-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cm-table tbody tr:hover td {
+  background: #f8fbff;
+}
+
+.cm-val {
+  font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+/* ── Note ── */
+.cm-note {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0.25rem 0 0;
+  padding: 0.6rem 0.85rem;
+  background: #fffbe6;
+  border-left: 3px solid #f0c000;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+/* ── Diagram header + unit toggle ── */
+.cm-diagram-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.cm-unit-toggle {
+  display: flex;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cm-unit-btn {
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #f4f4f4;
+  color: #555;
+  border: none;
+  border-bottom: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.cm-unit-btn:hover {
+  background: #e8e8e8;
+  border-bottom: none;
+}
+
+.cm-unit-btn--active {
+  background: #1a5fa8;
+  color: #fff;
+}
+
+.cm-unit-btn--active:hover {
+  background: #174f8e;
+}
+
+/* ── Diagram ── */
+.cm-diagram {
+  width: 100%;
+  max-width: 320px;
+}
+
+.cm-diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cm-diagram-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+
+.cm-legend-item {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.cm-legend--green  { background: #1e8a3c; }
+.cm-legend--blue   { background: #1a5fa8; }
+.cm-legend--red    { background: #c0392b; }
+.cm-legend--yellow { background: #c8a000; color: #1a1a1a; }
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .cm-page {
+    padding: 1rem 0.75rem 3rem;
+  }
+
+  .cm-grid {
+    gap: 1rem;
+  }
+
+  .cm-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .cm-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));;
+  }
+
+  .cm-card--diagram {
+    grid-column: 1;
+  }
+
+  .cm-table th,
+  .cm-table td {
+    padding: 0.4rem 0.45rem;
+  }
+}

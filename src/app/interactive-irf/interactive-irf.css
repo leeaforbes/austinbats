@@ -1,3 +1,7 @@
+/* ── IRF Palette ─────────────────────────────── */
+/* Primary: red #c0392b, blue #1a5fa8, green #1e8a3c  */
+/* Accent:  yellow #f0c000                             */
+
 /* ── Page shell ─────────────────────────────── */
 .irf-page {
   max-width: 1200px;
@@ -11,7 +15,8 @@
   text-align: center;
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
-  border-bottom: 3px solid #f0c000;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(to right, #c0392b 33%, #1a5fa8 33% 66%, #1e8a3c 66%) 1;
 }
 
 .irf-header h1 {
@@ -142,14 +147,14 @@
 }
 
 .search-result:hover {
-  background: #fffbe6;
+  background: #eef3fb;
   border-bottom: 1px solid #f0f0f0;
 }
 
 .search-result-number {
   display: inline-block;
-  background: #1a1a1a;
-  color: #f0c000;
+  background: #1a5fa8;
+  color: #fff;
   font-size: 0.72rem;
   font-weight: bold;
   padding: 0.15rem 0.45rem;
@@ -202,7 +207,8 @@
 /* ── Tools menu ──────────────────────────────── */
 .tools-menu {
   background: #fff;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #c8d8ee;
+  border-left: 4px solid #1a5fa8;
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 2rem;
@@ -213,8 +219,8 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #555;
-  border-bottom: 2px solid #f0c000;
+  color: #1a5fa8;
+  border-bottom: 2px solid #1a5fa8;
   padding-bottom: 0.5rem;
 }
 
@@ -227,21 +233,23 @@
 .tools-links a {
   display: inline-block;
   background: #f8f8f8;
-  color: #1a1a1a;
+  color: #1a5fa8;
   text-decoration: none;
   padding: 0.6rem 1.1rem;
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 600;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #c8d8ee;
   transition:
     background 0.15s ease,
-    border-color 0.15s ease;
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .tools-links a:hover {
-  background: #f0c000;
-  border-color: #d9ae00;
+  background: #1a5fa8;
+  border-color: #1a5fa8;
+  color: #fff;
 }
 
 /* ── Two-column layout ───────────────────────── */
@@ -258,6 +266,7 @@
   top: 1rem;
   background: #f8f8f8;
   border: 1px solid #e2e2e2;
+  border-top: 3px solid #c0392b;
   border-radius: 8px;
   padding: 1.25rem 1rem;
   max-height: calc(100vh - 3rem);
@@ -269,8 +278,8 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #555;
-  border-bottom: 2px solid #f0c000;
+  color: #c0392b;
+  border-bottom: 2px solid #c0392b;
   padding-bottom: 0.5rem;
 }
 
@@ -291,12 +300,12 @@
   padding: 0.35rem 0.5rem;
   border-radius: 4px;
   line-height: 1.4;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 .toc li a:hover {
-  background: #f0c000;
-  color: #1a1a1a;
+  background: #1a5fa8;
+  color: #fff;
 }
 
 /* ── Content column ──────────────────────────── */
@@ -341,7 +350,7 @@
 
 .section-toggle {
   padding: 0.9rem 1.25rem;
-  background: #1a1a1a;
+  background: #1a5fa8;
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
@@ -349,7 +358,7 @@
 }
 
 .section-toggle:hover {
-  background: #2f2f2f;
+  background: #174f8e;
 }
 
 .section-body {
@@ -373,15 +382,15 @@
 
 .chapter-toggle {
   padding: 0.9rem 1.25rem;
-  background: #f0c000;
-  color: #1a1a1a;
+  background: #c0392b;
+  color: #fff;
   font-size: 1rem;
   font-weight: bold;
   transition: background 0.15s ease;
 }
 
 .chapter-toggle:hover {
-  background: #d9ae00;
+  background: #a93224;
 }
 
 .chapter-body {
@@ -404,7 +413,7 @@
 }
 
 .rule-toggle:hover {
-  background: #efefef;
+  background: #eef3fb;
 }
 
 .rule-label {
@@ -415,8 +424,8 @@
 
 .rule-number {
   display: inline-block;
-  background: #1a1a1a;
-  color: #f0c000;
+  background: #1e8a3c;
+  color: #fff;
   font-size: 0.75rem;
   font-weight: bold;
   padding: 0.1rem 0.45rem;
@@ -450,14 +459,14 @@
 }
 
 .irf-subsection {
-  border: 1px solid #e2e2e2;
+  border: 1px solid #d4e9dc;
   border-radius: 6px;
   overflow: hidden;
 }
 
 .subsection-toggle {
   padding: 0.55rem 1rem;
-  background: #f2f2f2;
+  background: #edf7f0;
   font-size: 0.87rem;
   font-weight: 600;
   color: #1a1a1a;
@@ -465,13 +474,13 @@
 }
 
 .subsection-toggle:hover {
-  background: #e8e8e8;
+  background: #d4e9dc;
 }
 
 .subsection-body {
   padding: 0.75rem 1rem;
-  background: #fafafa;
-  border-top: 1px solid #e2e2e2;
+  background: #f7fbf8;
+  border-top: 1px solid #d4e9dc;
 }
 
 .subsection-body p {
