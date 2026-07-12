@@ -1,0 +1,104 @@
+<div class="irf-page">
+  <div class="irf-header">
+    <h1>{{ data.title }}</h1>
+    <p class="last-updated">Last updated: {{ data.lastUpdated }}</p>
+    <a
+      class="pdf-link"
+      href="https://static1.squarespace.com/static/5f4677d15add242b3dd3415e/t/6944a77d4353cb04a495437e/1766107005771/IRF+Rules+RRR+Updates+%2810.17.25%29+%281%29.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      &#128196; View Official IRF Rules PDF
+    </a>
+  </div>
+
+  <div class="irf-layout">
+    <nav class="toc" aria-label="Table of Contents">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="/interactive-irf#overview">Overview</a></li>
+        @for (chapter of data.chapters; track chapter.number) {
+          <li>
+            <a href="/interactive-irf#chapter{{ chapter.number }}">
+              Ch. {{ chapter.number }}: {{ chapter.title }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <div class="irf-content">
+      <section id="overview" class="irf-section">
+        <button class="section-toggle" (click)="toggleOverview()">
+          <span class="toggle-icon">{{ overviewExpanded ? '▼' : '▶' }}</span>
+          <span>Overview</span>
+        </button>
+        @if (overviewExpanded) {
+          <div class="section-body">
+            <p class="section-text">{{ data.overview }}</p>
+          </div>
+        }
+      </section>
+
+      @for (chapter of data.chapters; track chapter.number) {
+        <section [id]="chapterId(chapter.number)" class="irf-chapter">
+          <button class="chapter-toggle" (click)="toggleChapter(chapter.number)">
+            <span class="toggle-icon">{{ isChapterExpanded(chapter.number) ? '▼' : '▶' }}</span>
+            <span>Chapter {{ chapter.number }}: {{ chapter.title }}</span>
+          </button>
+
+          @if (isChapterExpanded(chapter.number)) {
+            <div class="chapter-body">
+              @for (section of chapter.sections; track section.number) {
+                <div class="irf-rule">
+                  <button class="rule-toggle" (click)="toggleSection(section.number)">
+                    <span class="toggle-icon">{{
+                      isSectionExpanded(section.number) ? '▼' : '▶'
+                    }}</span>
+                    <span class="rule-label">
+                      <span class="rule-number">{{ section.number }}</span>
+                      {{ section.title }}
+                    </span>
+                  </button>
+
+                  @if (isSectionExpanded(section.number)) {
+                    <div class="rule-body">
+                      @if (section.content) {
+                        <p class="rule-text">{{ section.content }}</p>
+                      }
+                      @if (section.subsections && section.subsections.length > 0) {
+                        <div class="subsections">
+                          @for (sub of section.subsections; track sub.number) {
+                            <div class="irf-subsection">
+                              <button
+                                class="subsection-toggle"
+                                (click)="toggleSection(sub.number)"
+                              >
+                                <span class="toggle-icon">{{
+                                  isSectionExpanded(sub.number) ? '▼' : '▶'
+                                }}</span>
+                                <span class="rule-label">
+                                  <span class="rule-number">{{ sub.number }}</span>
+                                  {{ sub.title }}
+                                </span>
+                              </button>
+                              @if (isSectionExpanded(sub.number)) {
+                                <div class="subsection-body">
+                                  <p class="rule-text">{{ sub.content }}</p>
+                                </div>
+                              }
+                            </div>
+                          }
+                        </div>
+                      }
+                    </div>
+                  }
+                </div>
+              }
+            </div>
+          }
+        </section>
+      }
+    </div>
+  </div>
+</div>

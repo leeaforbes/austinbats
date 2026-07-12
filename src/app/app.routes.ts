@@ -4,6 +4,7 @@ import { Schedule } from './schedule/schedule';
 import { Media } from './media/media';
 import { SummerCamp } from './summer-camp/summer-camp';
 import { Sponsors } from './sponsors/sponsors';
+import { InteractiveIrf } from './interactive-irf/interactive-irf';
 
 export const routes: Routes = [
     { path: '', component: Home },
@@ -11,4 +12,5 @@ export const routes: Routes = [
     { path: 'media', component: Media },
     { path: 'summer-camp', component: SummerCamp },
     { path: 'sponsors', component: Sponsors },
+    { path: 'interactive-irf', component: InteractiveIrf },
 ];
