@@ -731,37 +731,295 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "5.1",
           title: "In Play",
-          content: "The ball is in play from the moment the server strikes it until one of the following occur: A serving fault occurs and/or is called by the receiving team or an observer. An infraction occurs and/or is called by any team or an observer."
+          content: "The ball is in play from the moment the server strikes it until one of the following occur:",
+          subsections: [
+            {
+              number: "5.1.1",
+              title: "",
+              content: "A serving fault occurs and/or is called by the receiving team or an observer."
+            },
+            {
+              number: "5.1.2",
+              title: "",
+              content: "An infraction occurs and/or is called by any team or an observer."
+            }
+          ]
         },
         {
           number: "5.2",
           title: "Hitting the ball",
-          content: "A hit is any contact with the ball by a player. A team is entitled to a maximum of 3 hits alternating between players for returning the ball to the set. Consecutive Contacts - A player may not hit the ball twice consecutively. Exception see rule 5.3.5 and 5.3.6. Simultaneous Contacts - If on the first contact of a possession teammates touch the ball simultaneously it is counted as one hit. Either teammate may take the next hit. After the first touch, simultaneous contacts count as two hits."
+          content: "",
+          subsections: [
+            {
+              number: "5.2.1",
+              title: "",
+              content: "A hit is any contact with the ball by a player."
+            },
+            {
+              number: "5.2.2",
+              title: "",
+              content: "A team is entitled to a maximum of 3 hits alternating between players for returning the ball to the set."
+            },
+            {
+              number: "5.2.3",
+              title: "Consecutive Contacts",
+              content: "A player may not hit the ball twice consecutively. Exception see rule 5.3.5 and 5.3.6."
+            },
+            {
+              number: "5.2.4",
+              title: "Simultaneous Contacts",
+              content: "If on the first contact of a possession teammates touch the ball simultaneously it is counted as one hit. Either teammate may take the next hit. After the first touch, simultaneous contacts count as two hits."
+            }
+          ]
         },
         {
           number: "5.3",
           title: "Characteristics of the hit",
-          content: "The ball may touch any part of the body. The ball must not be caught. A catch happens when the ball comes to rest on any part of the player. Players may not hit the ball with two hands. Exceptions see rules 5.3.4 and 5.3.5. At the first hit of the team on a possession, the ball may touch various parts of the body, provided that the contacts take place simultaneously. At the first hit of the team on a possession, the ball may contact various parts of one or both players' bodies consecutively, provided that the contacts occur during one action. A player may have consecutive contacts on the same hand (i.e palms to finger) as long as it does not result in a catch and/or throw. These consecutive contacts count as one hit. After the first hit of the team on a possession, a player may hit the ball once more consecutively, if their first hit occurs before the ball begins a downward trajectory. This action will be counted as a second hit. Consecutive contacts as described in 5.3.6 are not allowed on serve receive. Consecutive contacts as described in 5.3.6 cannot result in an immediate hit on the net."
+          content: "",
+          subsections: [
+            {
+              number: "5.3.1",
+              title: "",
+              content: "The ball may touch any part of the body."
+            },
+            {
+              number: "5.3.2",
+              title: "",
+              content: "The ball must not be caught.",
+              subsections: [
+                {
+                  number: "5.3.2.1",
+                  title: "",
+                  content: "A catch happens when the ball comes to rest on any part of the player."
+                }
+              ]
+            },
+            {
+              number: "5.3.3",
+              title: "",
+              content: "Players may not hit the ball with two hands. Exceptions see rules 5.3.4 and 5.3.5."
+            },
+            {
+              number: "5.3.4",
+              title: "",
+              content: "At the first hit of the team on a possession, the ball may touch various parts of the body, provided that the contacts take place simultaneously."
+            },
+            {
+              number: "5.3.5",
+              title: "",
+              content: "At the first hit of the team on a possession, the ball may contact various parts of one or both players' bodies consecutively, provided that the contacts occur during one action. A player may have consecutive contacts on the same hand (i.e palms to finger) as long as it does not result in a catch and/or throw. These consecutive contacts count as one hit."
+            },
+            {
+              number: "5.3.6",
+              title: "",
+              content: "After the first hit of the team on a possession, a player may hit the ball once more consecutively, if their first hit occurs before the ball begins a downward trajectory. This action will be counted as a second hit.",
+              subsections: [
+                {
+                  number: "5.3.6.1",
+                  title: "",
+                  content: "Consecutive contacts as described in 5.3.6 are not allowed on serve receive."
+                },
+                {
+                  number: "5.3.6.2",
+                  title: "",
+                  content: "Consecutive contacts as described in 5.3.6 cannot result in an immediate hit on the net."
+                }
+              ]
+            }
+          ]
         },
         {
           number: "5.4",
           title: "Infractions in Playing the Ball",
-          content: "Four hits - A team hits the ball more than three times before returning it to the set. Non-rebound - The ball is caught. Two-handed hit – A player hits the ball with both hands simultaneously. Exception see rule 5.3.4. Double-contact - A player hits the ball twice in succession or the ball contacts various parts of his/her body in succession. Exception see rule 5.3.5."
+          content: "",
+          subsections: [
+            {
+              number: "5.4.1",
+              title: "Four hits",
+              content: "A team hits the ball more than three times before returning it to the set."
+            },
+            {
+              number: "5.4.2",
+              title: "Non-rebound",
+              content: "The ball is caught."
+            },
+            {
+              number: "5.4.3",
+              title: "Two-handed hit",
+              content: "A player hits the ball with both hands simultaneously. Exception see rule 5.3.4."
+            },
+            {
+              number: "5.4.4",
+              title: "Double-contact",
+              content: "A player hits the ball twice in succession or the ball contacts various parts of his/her body in succession. Exception see rule 5.3.5."
+            }
+          ]
         },
         {
           number: "5.5",
           title: "Hits on the net",
-          content: "Illegal hits on the net - When the ball is returned to the set, the return results in a loss of point for the hitting team if: The ball contacts any part of the ground. The ball's initial contact with the set hits the rim, legs or underside of the net directly. The ball bounces multiple times on the net or bounces on the net then hits the set on the way down. The ball never exits the net. The ball touches the ground outside the outer boundary without the opposing team touching the ball before it contacts the ground. A ball touching the boundary line is legal. Note - the boundary rule does not apply on the serve. The ball lands on or within the No Hit Zone lines. For mixed play the open/men's No Hit Zone lines will be used as the line the ball must clear. The receiving team returns the serve without using three touches. Pocket - During a rally, any shot that changes the trajectory of the ball due to the ball's proximity to the rim, without contacting the rim (i.e. pocket) is legal. Roll-up - A shot where the ball lands completely on the netting, and subsequently rolls into the rim and then off the net (i.e. roll-up) is legal. Change of Possession - Possession changes once the ball comes off of the netting. Neither team may contact the ball while it is in contact with the net. Other hitting violations. All result in loss of point: A defensive player attempts to play the ball out of turn. An offensive player hits a shot off the net which subsequently hits themselves or their teammate (includes serves). A player is in contact with the ball while the ball is in contact with the net."
+          content: "",
+          subsections: [
+            {
+              number: "5.5.1",
+              title: "Illegal hits on the net",
+              content: "When the ball is returned to the set, the return results in a loss of point for the hitting team if:",
+              subsections: [
+                {
+                  number: "5.5.1.1",
+                  title: "",
+                  content: "The ball contacts any part of the ground."
+                },
+                {
+                  number: "5.5.1.2",
+                  title: "",
+                  content: "The ball's initial contact with the set hits the rim, legs or underside of the net directly."
+                },
+                {
+                  number: "5.5.1.3",
+                  title: "",
+                  content: "The ball bounces multiple times on the net or bounces on the net then hits the set on the way down."
+                },
+                {
+                  number: "5.5.1.4",
+                  title: "",
+                  content: "The ball never exits the net."
+                },
+                {
+                  number: "5.5.1.5",
+                  title: "",
+                  content: "The ball touches the ground outside the outer boundary without the opposing team touching the ball before it contacts the ground. A ball touching the boundary line is legal. Note - the boundary rule does not apply on the serve."
+                },
+                {
+                  number: "5.5.1.6",
+                  title: "",
+                  content: "The ball lands on or within the No Hit Zone lines. For mixed play the open/men's No Hit Zone lines will be used as the line the ball must clear."
+                },
+                {
+                  number: "5.5.1.7",
+                  title: "",
+                  content: "The receiving team returns the serve without using three touches."
+                }
+              ]
+            },
+            {
+              number: "5.5.2",
+              title: "Pocket",
+              content: "During a rally, any shot that changes the trajectory of the ball due to the ball's proximity to the rim, without contacting the rim (i.e. pocket) is legal. See rule 4.6.7 for pockets on a serve."
+            },
+            {
+              number: "5.5.3",
+              title: "Roll-up",
+              content: "A shot where the ball lands completely on the netting, and subsequently rolls into the rim and then off the net (i.e. roll-up) is legal."
+            },
+            {
+              number: "5.5.4",
+              title: "Change of Possession",
+              content: "",
+              subsections: [
+                {
+                  number: "5.5.4.1",
+                  title: "",
+                  content: "Possession changes once the ball comes off of the netting. Neither team may contact the ball while it is in contact with the net."
+                }
+              ]
+            },
+            {
+              number: "5.5.5",
+              title: "Other hitting violations",
+              content: "All result in loss of point:",
+              subsections: [
+                {
+                  number: "5.5.5.1",
+                  title: "",
+                  content: "A defensive player attempts to play the ball out of turn."
+                },
+                {
+                  number: "5.5.5.2",
+                  title: "",
+                  content: "An offensive player hits a shot off the net which subsequently hits themselves or their teammate (includes serves)."
+                },
+                {
+                  number: "5.5.5.3",
+                  title: "",
+                  content: "A player is in contact with the ball while the ball is in contact with the net."
+                }
+              ]
+            }
+          ]
         },
         {
           number: "5.6",
           title: "No Hit Zone",
-          content: "The 100cm (3.28 feet) from the center of the net is the No Hit Zone. The final hit of all possessions must be initiated outside of this area. It is a loss of point for the hitting team if on the final hit of the possession the hitting player makes contact on or within the No Hit Zone while in the act of hitting. This includes contacting a player who is on or within the No Hit Zone. (i.e. the hitter may not use another player inside the No Hit Zone to reestablish their bodily control.) The act of hitting includes the swing, the follow-through, and the momentum from the action. It is a loss of point if the player's momentum causes the player to contact anything within the No Hit Zone, including another player. If the player is unable to avoid the No Hit Zone due to the proximity of an opponent, the hinder (Chapter 6) by the defender precedes a No Hit Zone violation by the hitter. If neither player on the defending team would have had an opportunity for a return, the hitter's team is awarded the point even if this hinder is unavoidable. It is a loss of point even if the ball is declared dead before the player makes contact within the No Hit Zone. The hitter may only make contact within the No Hit Zone after demonstrating the momentum from the action has stopped and reestablishing bodily control. If equipment inadvertently falls off a player's body and lands in the No Hit Zone, it is not a violation. For example a hat falls off and lands in the No Hit Zone. If a player has touched the No Hit Zone for any reason, that player cannot make the final hit of a possession until both feet have made contact with the playing surface completely outside the No Hit Zone. A player may enter the No Hit Zone at any time except when that player is making the final hit of a possession."
+          content: "",
+          subsections: [
+            {
+              number: "5.6.1",
+              title: "",
+              content: "The 100cm (3.28 feet) from the center of the net is the No Hit Zone. The final hit of all possessions must be initiated outside of this area."
+            },
+            {
+              number: "5.6.2",
+              title: "",
+              content: "It is a loss of point for the hitting team if on the final hit of the possession the hitting player makes contact on or within the No Hit Zone while in the act of hitting. This includes contacting a player who is on or within the No Hit Zone. (i.e. the hitter may not use another player inside the No Hit Zone to reestablish their bodily control.)",
+              subsections: [
+                {
+                  number: "5.6.2.1",
+                  title: "",
+                  content: "The act of hitting includes the swing, the follow-through, and the momentum from the action."
+                },
+                {
+                  number: "5.6.2.2",
+                  title: "",
+                  content: "It is a loss of point if the player's momentum causes the player to contact anything within the No Hit Zone, including another player.",
+                  subsections: [
+                    {
+                      number: "5.6.2.2.1",
+                      title: "",
+                      content: "If the player is unable to avoid the No Hit Zone due to the proximity of an opponent, the hinder (Chapter 6) by the defender precedes a No Hit Zone violation by the hitter. If neither player on the defending team would have had an opportunity for a return, the hitter's team is awarded the point even if this hinder is unavoidable."
+                    }
+                  ]
+                },
+                {
+                  number: "5.6.2.3",
+                  title: "",
+                  content: "It is a loss of point even if the ball is declared dead before the player makes contact within the No Hit Zone."
+                },
+                {
+                  number: "5.6.2.4",
+                  title: "",
+                  content: "The hitter may only make contact within the No Hit Zone after demonstrating the momentum from the action has stopped and reestablishing bodily control."
+                },
+                {
+                  number: "5.6.2.5",
+                  title: "",
+                  content: "If equipment inadvertently falls off a player's body and lands in the No Hit Zone, it is not a violation. For example a hat falls off and lands in the No Hit Zone."
+                }
+              ]
+            },
+            {
+              number: "5.6.3",
+              title: "",
+              content: "If a player has touched the No Hit Zone for any reason, that player cannot make the final hit of a possession until both feet have made contact with the playing surface completely outside the No Hit Zone."
+            },
+            {
+              number: "5.6.4",
+              title: "",
+              content: "A player may enter the No Hit Zone at any time except when that player is making the final hit of a possession."
+            }
+          ]
         },
         {
           number: "5.7",
           title: "Contact with the Set",
-          content: "Contact with the set by a player (rims, legs, or netting) during a rally results in a Set Contact infraction for the offending player and is a loss of point for that team. This includes contact from equipment that has fallen off a player. If natural movement of the equipment pushes the set into a player, the set contact is not considered a violation and the point should be played out."
+          content: "Contact with the set by a player (rims, legs, or netting) during a rally results in a Set Contact infraction for the offending player and is a loss of point for that team. This includes contact from equipment that has fallen off a player.",
+          subsections: [
+            {
+              number: "5.7.1",
+              title: "",
+              content: "If natural movement of the equipment pushes the set into a player, the set contact is not considered a violation and the point should be played out."
+            }
+          ]
         }
       ]
     },
@@ -772,12 +1030,43 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "6.1",
           title: "Right of Way",
-          content: "The players whose turn it is to play the ball are entitled to freedom from interference by the opponents. The order in which players can legally contact the ball determines who has the right of way. A player that can legally contact the ball before another player has the right of way."
+          content: "The players whose turn it is to play the ball are entitled to freedom from interference by the opponents.",
+          subsections: [
+            {
+              number: "6.1.1",
+              title: "",
+              content: "The order in which players can legally contact the ball determines who has the right of way. A player that can legally contact the ball before another player has the right of way."
+            }
+          ]
         },
         {
           number: "6.2",
           title: "Avoiding Interference",
-          content: "To avoid interference players that are not playing the ball must make every effort to provide the other players with: Unobstructed direct access to the ball after completion of a reasonable followthrough. Freedom to hit the ball with a reasonable swing. To ensure player safety, when a hitter is within their arm's reach of the net, the defensive team may not enter the imaginary cylinder rising from the rim. If they do so, it will result in a point for the hitting team. The opposing team may enter the cylinder after the hitter's follow through is complete. A player's follow-through can contribute to interference for the opponent when it becomes the latter's turn to play the ball. If a player moves in the direction of their hit causing immediate interference a replay may be given (see 6.7)."
+          content: "To avoid interference players that are not playing the ball must make every effort to provide the other players with:",
+          subsections: [
+            {
+              number: "6.2.1",
+              title: "",
+              content: "Unobstructed direct access to the ball after completion of a reasonable followthrough."
+            },
+            {
+              number: "6.2.2",
+              title: "",
+              content: "Freedom to hit the ball with a reasonable swing.",
+              subsections: [
+                {
+                  number: "6.2.2.1",
+                  title: "",
+                  content: "To ensure player safety, when a hitter is within their arm's reach of the net, the defensive team may not enter the imaginary cylinder rising from the rim. If they do so, it will result in a point for the hitting team. The opposing team may enter the cylinder after the hitter's follow through is complete."
+                },
+                {
+                  number: "6.2.2.2",
+                  title: "",
+                  content: "A player's follow-through can contribute to interference for the opponent when it becomes the latter's turn to play the ball. If a player moves in the direction of their hit causing immediate interference a replay may be given (see 6.7)."
+                }
+              ]
+            }
+          ]
         },
         {
           number: "6.3",
@@ -787,12 +1076,55 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "6.4",
           title: "Player Choice",
-          content: "A player encountering a possible hinder has the choice of continuing to play or of stopping play. A player seeking a replay or point should stop play immediately and say Hinder."
+          content: "A player encountering a possible hinder has the choice of continuing to play or of stopping play.",
+          subsections: [
+            {
+              number: "6.4.1",
+              title: "",
+              content: "A player seeking a replay or point should stop play immediately and say Hinder."
+            }
+          ]
         },
         {
           number: "6.5",
           title: "No Replay or Point",
-          content: "A replay or point shall not be allowed if: There was no interference or the interference was so minimal that the player's freedom to get to and play the ball were not affected. Interference occurred but there is no opportunity for a return, giving benefit of the doubt to the hindered player. The player making every effort to get to the ball (short of dangerous physical contact) is a significant factor in determining if they would have an opportunity for a return. In any questionable situation player safety should be the number one priority. The player moved past the point of interference and played on. The player created the interference in moving to the ball by taking an indirect route while the opponent provided direct access. This occurs when the opponent clearly provides a direct access but the player takes an indirect route. This is different from a situation in which a player, in attempting to recover from a position of disadvantage, does not have direct access to the ball. In this situation the player anticipates the opponent hitting the ball one way, starts moving that way, but having guessed wrongly, changes direction to find the opponent in the way. If the player sufficiently demonstrates that they would have had a good touch then 6.6 - 6.7 will determine the outcome of the hinder."
+          content: "A replay or point shall not be allowed if:",
+          subsections: [
+            {
+              number: "6.5.1",
+              title: "",
+              content: "There was no interference or the interference was so minimal that the player's freedom to get to and play the ball were not affected."
+            },
+            {
+              number: "6.5.2",
+              title: "",
+              content: "Interference occurred but there is no opportunity for a return, giving benefit of the doubt to the hindered player.",
+              subsections: [
+                {
+                  number: "6.5.2.1",
+                  title: "",
+                  content: "The player making every effort to get to the ball (short of dangerous physical contact) is a significant factor in determining if they would have an opportunity for a return. In any questionable situation player safety should be the number one priority."
+                }
+              ]
+            },
+            {
+              number: "6.5.3",
+              title: "",
+              content: "The player moved past the point of interference and played on."
+            },
+            {
+              number: "6.5.4",
+              title: "",
+              content: "The player created the interference in moving to the ball by taking an indirect route while the opponent provided direct access.",
+              subsections: [
+                {
+                  number: "6.5.4.1",
+                  title: "",
+                  content: "This occurs when the opponent clearly provides a direct access but the player takes an indirect route. This is different from a situation in which a player, in attempting to recover from a position of disadvantage, does not have direct access to the ball. In this situation the player anticipates the opponent hitting the ball one way, starts moving that way, but having guessed wrongly, changes direction to find the opponent in the way. If the player sufficiently demonstrates that they would have had a good touch then 6.6 - 6.7 will determine the outcome of the hinder."
+                }
+              ]
+            }
+          ]
         },
         {
           number: "6.6",
@@ -802,7 +1134,14 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "6.7",
           title: "Replay Awarded",
-          content: "The hindered team will get a replay if there was interference, which the opponent made every effort to avoid, and the player would have had an opportunity for a return. Any faults reset."
+          content: "The hindered team will get a replay if there was interference, which the opponent made every effort to avoid, and the player would have had an opportunity for a return.",
+          subsections: [
+            {
+              number: "6.7.1",
+              title: "",
+              content: "Any faults reset."
+            }
+          ]
         }
       ]
     },
@@ -813,7 +1152,34 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "7.1",
           title: "Sportsmanlike Conduct",
-          content: "Participants must know the Official IRF rules and abide by them. Participants must play with integrity. The responsibility of fair play is first and foremost on the players. If a participant knows that they committed any sort of violation, it is their obligation to call it immediately (exception 4.5.2.1). Participants must accept observers' decisions with sportsmanlike conduct, without disputing them. In case of doubt or confusion, clarification may be requested. Participants must refrain from actions or attitudes aimed at influencing the decisions of the observers. Participants must abide by timing regulations. See delay of game in 3.10 and 3.11."
+          content: "",
+          subsections: [
+            {
+              number: "7.1.1",
+              title: "",
+              content: "Participants must know the Official IRF rules and abide by them."
+            },
+            {
+              number: "7.1.2",
+              title: "",
+              content: "Participants must play with integrity. The responsibility of fair play is first and foremost on the players. If a participant knows that they committed any sort of violation, it is their obligation to call it immediately (exception 4.5.2.1)."
+            },
+            {
+              number: "7.1.3",
+              title: "",
+              content: "Participants must accept observers' decisions with sportsmanlike conduct, without disputing them. In case of doubt or confusion, clarification may be requested."
+            },
+            {
+              number: "7.1.4",
+              title: "",
+              content: "Participants must refrain from actions or attitudes aimed at influencing the decisions of the observers."
+            },
+            {
+              number: "7.1.5",
+              title: "",
+              content: "Participants must abide by timing regulations. See delay of game in 3.10 and 3.11."
+            }
+          ]
         },
         {
           number: "7.2",
@@ -823,12 +1189,46 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "7.3",
           title: "Misconduct",
-          content: "Inappropriate conduct by a player towards observers, opponents, partners, spectators, or tournament personnel is classified in three categories according to the seriousness of the offense. Rude conduct - Action contrary to good manners or moral principles. Offensive conduct - Defamatory or insulting words or gestures or any action expressing contempt. Aggression - Actual physical attack or aggressive or threatening behavior."
+          content: "Inappropriate conduct by a player towards observers, opponents, partners, spectators, or tournament personnel is classified in three categories according to the seriousness of the offense.",
+          subsections: [
+            {
+              number: "7.3.1",
+              title: "Rude conduct",
+              content: "Action contrary to good manners or moral principles."
+            },
+            {
+              number: "7.3.2",
+              title: "Offensive conduct",
+              content: "Defamatory or insulting words or gestures or any action expressing contempt."
+            },
+            {
+              number: "7.3.3",
+              title: "Aggression",
+              content: "Actual physical attack or aggressive or threatening behavior."
+            }
+          ]
         },
         {
           number: "7.4",
           title: "Misconduct Sanction Scale",
-          content: "Warning - The first rude conduct of the match by a player is sanctioned with a warning by the observer or tournament director. Penalty - The second rude conduct of the same match by the same player is penalized with a point awarded by the observer or tournament director. The first offensive conduct of the match by a player is penalized with a point awarded by the observer or tournament director. Disqualification - The third rude conduct of the same match by the same player is sanctioned by tournament disqualification by the observer or tournament director. The second offensive conduct of the match by a player is sanctioned by tournament disqualification by the observer or tournament director. The first physical attack or implied or threatened aggression is sanctioned by tournament disqualification by the observer or tournament director."
+          content: "",
+          subsections: [
+            {
+              number: "7.4.1",
+              title: "Warning",
+              content: "The first rude conduct of the match by a player is sanctioned with a warning by the observer or tournament director."
+            },
+            {
+              number: "7.4.2",
+              title: "Penalty",
+              content: "The second rude conduct of the same match by the same player is penalized with a point awarded by the observer or tournament director. The first offensive conduct of the match by a player is penalized with a point awarded by the observer or tournament director."
+            },
+            {
+              number: "7.4.3",
+              title: "Disqualification",
+              content: "The third rude conduct of the same match by the same player is sanctioned by tournament disqualification by the observer or tournament director. The second offensive conduct of the match by a player is sanctioned by tournament disqualification by the observer or tournament director. The first physical attack or implied or threatened aggression is sanctioned by tournament disqualification by the observer or tournament director."
+            }
+          ]
         },
         {
           number: "7.5",
