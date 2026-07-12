@@ -1,0 +1,115 @@
+<div class="hdt-page">
+  <div class="hdt-header">
+    <a class="hdt-back" routerLink="/interactive-irf">&#8592; Back to IRF Rules</a>
+    <h1>Hinder Decision Tree</h1>
+    <p class="hdt-subtitle">Step through the rules to determine the correct outcome when a hinder is called (Chapter 6)</p>
+  </div>
+
+  <div class="hdt-main">
+
+    <!-- Path breadcrumb -->
+    @if (history.length > 0) {
+      <div class="hdt-breadcrumb">
+        @for (step of history; track $index) {
+          <div class="hdt-crumb">
+            <span class="hdt-crumb-q">{{ step.node.question }}</span>
+            <span class="hdt-crumb-answer" [class.hdt-crumb-answer--yes]="step.answer === 'yes'" [class.hdt-crumb-answer--no]="step.answer === 'no'">
+              {{ step.answer === 'yes' ? 'Yes' : 'No' }}
+            </span>
+          </div>
+        }
+      </div>
+    }
+
+    <!-- Question card -->
+    @if (!isOutcome) {
+      <div class="hdt-card hdt-card--question">
+        <div class="hdt-step-label">
+          <span class="hdt-step-badge">Step {{ stepNumber }}</span>
+          @if (currentNode.ruleRef) {
+            <span class="hdt-rule-ref">{{ currentNode.ruleRef }}</span>
+          }
+        </div>
+        <p class="hdt-question">{{ currentNode.question }}</p>
+        @if (currentNode.detail) {
+          <p class="hdt-detail">{{ currentNode.detail }}</p>
+        }
+        <div class="hdt-actions">
+          <button class="hdt-btn hdt-btn--yes" (click)="answer('yes')">
+            <span class="hdt-btn-icon">&#10003;</span> Yes
+          </button>
+          <button class="hdt-btn hdt-btn--no" (click)="answer('no')">
+            <span class="hdt-btn-icon">&#10007;</span> No
+          </button>
+        </div>
+      </div>
+    }
+
+    <!-- Outcome card -->
+    @if (isOutcome) {
+      <div class="hdt-card hdt-card--outcome"
+        [class.hdt-card--no-call]="currentNode.outcome === 'no-call'"
+        [class.hdt-card--replay]="currentNode.outcome === 'replay'"
+        [class.hdt-card--point]="currentNode.outcome === 'point'">
+        <div class="hdt-outcome-icon">
+          @if (currentNode.outcome === 'no-call') { <span>&#9940;</span> }
+          @if (currentNode.outcome === 'replay') { <span>&#9654;</span> }
+          @if (currentNode.outcome === 'point') { <span>&#9733;</span> }
+        </div>
+        <h2 class="hdt-outcome-label">{{ currentNode.outcomeLabel }}</h2>
+        <p class="hdt-outcome-detail">{{ currentNode.outcomeDetail }}</p>
+        <div class="hdt-rule-summary">
+          @if (currentNode.outcome === 'no-call') {
+            <p>Relevant rules: §6.3 – §6.5 &nbsp;|&nbsp; No hinder applies — play stands or the call is invalid.</p>
+          }
+          @if (currentNode.outcome === 'replay') {
+            <p>Rule §6.7: Unavoidable interference — the opponent made every effort to avoid it, and a return opportunity existed. Replay the point; any faults reset.</p>
+          }
+          @if (currentNode.outcome === 'point') {
+            <p>Rule §6.6: Avoidable interference — the opponent did not make every effort to avoid it, and a return opportunity existed. Award the point to the hindered team.</p>
+          }
+        </div>
+      </div>
+    }
+
+    <!-- Navigation -->
+    <div class="hdt-nav">
+      @if (history.length > 0) {
+        <button class="hdt-nav-btn hdt-nav-btn--back" (click)="goBack()">&#8592; Back</button>
+      }
+      <button class="hdt-nav-btn hdt-nav-btn--reset" (click)="reset()">&#8635; Start Over</button>
+    </div>
+
+  </div>
+
+  <!-- Reference summary -->
+  <div class="hdt-reference">
+    <h2 class="hdt-ref-title">Hinder Rules Quick Reference</h2>
+    <div class="hdt-ref-grid">
+      <div class="hdt-ref-card">
+        <h3>§6.1 — Right of Way</h3>
+        <p>The player whose turn it is to play the ball is entitled to freedom from interference. The player who can legally contact the ball first has the right of way.</p>
+      </div>
+      <div class="hdt-ref-card">
+        <h3>§6.2 — Avoiding Interference</h3>
+        <p>Non-playing opponents must provide: unobstructed direct access to the ball after a reasonable follow-through, and freedom to hit with a reasonable swing. When a hitter is within arm's reach of the net, defenders may not enter the imaginary cylinder rising from the rim — doing so awards a point to the hitting team.</p>
+      </div>
+      <div class="hdt-ref-card">
+        <h3>§6.4 — Player Choice</h3>
+        <p>A player encountering a possible hinder may continue to play OR stop play. To seek a replay or point, the player must stop play immediately and say "Hinder."</p>
+      </div>
+      <div class="hdt-ref-card">
+        <h3>§6.5 — No Replay or Point</h3>
+        <p>No hinder outcome if: no interference existed; interference was minimal; player played on past the interference; player created the interference by taking an indirect route; or there was no opportunity for a return.</p>
+      </div>
+      <div class="hdt-ref-card hdt-ref-card--point">
+        <h3>§6.6 — Point Awarded</h3>
+        <p>Hindered team receives the point when: there was interference the opponent did <strong>not</strong> make every effort to avoid, AND the player would have had an opportunity for a return.</p>
+      </div>
+      <div class="hdt-ref-card hdt-ref-card--replay">
+        <h3>§6.7 — Replay Awarded</h3>
+        <p>Point is replayed when: there was interference the opponent <strong>did</strong> make every effort to avoid, AND the player would have had an opportunity for a return. Any faults reset.</p>
+      </div>
+    </div>
+  </div>
+</div>
