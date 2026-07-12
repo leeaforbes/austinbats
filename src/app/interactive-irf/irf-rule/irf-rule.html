@@ -1,0 +1,24 @@
+<div class="irf-rule" [id]="'section-' + section.number">
+  <button class="rule-toggle" (click)="toggle()">
+    <span class="toggle-icon">{{ localExpanded ? '▼' : '▶' }}</span>
+    <span class="rule-label">
+      <span class="rule-number">{{ section.number }}</span>
+      {{ section.title }}
+    </span>
+  </button>
+
+  @if (localExpanded) {
+    <div class="rule-body">
+      @if (section.content) {
+        <p class="rule-text">{{ section.content }}</p>
+      }
+      @if (section.subsections && section.subsections.length > 0) {
+        <div class="subsections">
+          @for (sub of section.subsections; track sub.number) {
+            <app-irf-rule [section]="sub"></app-irf-rule>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

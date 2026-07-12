@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { irfRulesData, IRFRulesData } from '../../irf-rules.data';
+import { IrfRule } from './irf-rule/irf-rule';
 
 export interface SearchResult {
   number: string;
@@ -13,7 +14,7 @@ export interface SearchResult {
 
 @Component({
   selector: 'app-interactive-irf',
-  imports: [RouterLink, FormsModule],
+  imports: [RouterLink, FormsModule, IrfRule],
   templateUrl: './interactive-irf.html',
   styleUrl: './interactive-irf.css',
 })
@@ -25,12 +26,21 @@ export class InteractiveIrf {
   searchOpen = false;
 
   expandedChapters = new Set<string>(irfRulesData.chapters.map((c) => c.number));
-  expandedSections = new Set<string>(
-    irfRulesData.chapters.flatMap((c) => [
-      ...c.sections.map((s) => s.number),
-      ...c.sections.flatMap((s) => (s.subsections ?? []).map((ss) => ss.number)),
-    ]),
-  );
+  expandedSections = new Set<string>(this.getAllSectionNumbers());
+
+  private getAllSectionNumbers(): string[] {
+    const numbers: string[] = [];
+    const collect = (section: any) => {
+      numbers.push(section.number);
+      if (section.subsections) {
+        section.subsections.forEach(collect);
+      }
+    };
+    irfRulesData.chapters.forEach((chapter) => {
+      chapter.sections.forEach(collect);
+    });
+    return numbers;
+  }
   overviewExpanded = true;
 
   toggleChapter(number: string): void {
@@ -76,39 +86,36 @@ export class InteractiveIrf {
     const results: SearchResult[] = [];
 
     for (const chapter of irfRulesData.chapters) {
-      for (const section of chapter.sections) {
-        if (this.matches(section.title, section.content, q)) {
-          results.push({
-            number: section.number,
-            title: section.title,
-            snippet: this.excerpt(section.content, q),
-            chapterNumber: chapter.number,
-            elementId: `section-${section.number}`,
-          });
-        }
-        for (const sub of section.subsections ?? []) {
-          if (this.matches(sub.title, sub.content, q)) {
-            results.push({
-              number: sub.number,
-              title: sub.title,
-              snippet: this.excerpt(sub.content, q),
-              chapterNumber: chapter.number,
-              elementId: `section-${sub.number}`,
-            });
-          }
-        }
-      }
+      this.searchInSection(chapter, chapter.sections, q, results);
     }
 
     this.searchResults = results.slice(0, 12);
     this.searchOpen = this.searchResults.length > 0;
   }
 
+  private searchInSection(chapter: any, sections: any[], q: string, results: SearchResult[]): void {
+    for (const section of sections) {
+      if (this.matches(section.title, section.content, q)) {
+        results.push({
+          number: section.number,
+          title: section.title,
+          snippet: this.excerpt(section.content, q),
+          chapterNumber: chapter.number,
+          elementId: `section-${section.number}`,
+        });
+      }
+      if (section.subsections) {
+        this.searchInSection(chapter, section.subsections, q, results);
+      }
+    }
+  }
+
   jumpTo(result: SearchResult): void {
     this.expandedChapters.add(result.chapterNumber);
     const parts = result.number.split('.');
-    if (parts.length >= 2) {
-      this.expandedSections.add(`${parts[0]}.${parts[1]}`);
+    // Expand all parent sections
+    for (let i = 1; i < parts.length; i++) {
+      this.expandedSections.add(parts.slice(0, i + 1).join('.'));
     }
     this.expandedSections.add(result.number);
 

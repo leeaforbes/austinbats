@@ -143,22 +143,90 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "3.1",
           title: "To Score a Point",
-          content: "Roundnet is played using rally scoring; points can be won by the serving or receiving team. A team scores a point when: (1) The opposing team fails to legally return the ball to the set. (2) The opposing team commits a point-loss infraction. (3) The opposing team's server has two successive faults."
+          content: "Roundnet is played using rally scoring; points can be won by the serving or receiving team. A team scores a point when:",
+          subsections: [
+            {
+              number: "3.1.1",
+              title: "",
+              content: "The opposing team fails to legally return the ball to the set."
+            },
+            {
+              number: "3.1.2",
+              title: "",
+              content: "The opposing team commits a point-loss infraction."
+            },
+            {
+              number: "3.1.3",
+              title: "",
+              content: "The opposing team's server has two successive faults."
+            }
+          ]
         },
         {
           number: "3.2",
           title: "Replay",
-          content: "A point is replayed when: (1) Teams disagree on the legality of a hit. (2) Teams disagree on an infraction. (3) Certain types of hinders occur, see Chapter 6 for details. (4) There is outside interference (ie a player, ball, or other object from outside a match impedes on the game). If a point is replayed due to disagreement on the legality of the serve, the server will replay the point with the fault count at the time of the disagreement. Otherwise, the server will start on their first serve. Score, positions and serving order remain the same in all cases."
+          content: "A point is replayed when:",
+          subsections: [
+            {
+              number: "3.2.1",
+              title: "",
+              content: "Teams disagree on the legality of a hit."
+            },
+            {
+              number: "3.2.2",
+              title: "",
+              content: "Teams disagree on an infraction."
+            },
+            {
+              number: "3.2.3",
+              title: "",
+              content: "Certain types of hinders occur, see Chapter 6 for details."
+            },
+            {
+              number: "3.2.4",
+              title: "",
+              content: "There is outside interference (ie a player, ball, or other object from outside a match impedes on the game)."
+            },
+            {
+              number: "3.2.5",
+              title: "",
+              content: "If a point is replayed due to disagreement on the legality of the serve, the server will replay the point with the fault count at the time of the disagreement. Otherwise, the server will start on their first serve. Score, positions and serving order remain the same in all cases."
+            }
+          ]
         },
         {
           number: "3.3",
           title: "Rally",
-          content: "A rally is a sequence of playing actions between the moment the serve is hit to the moment the ball is out of play. If the serving team wins a rally, they score a point and continue to serve. If the receiving team wins a rally, they score a point and must serve next."
+          content: "A rally is a sequence of playing actions between the moment the serve is hit to the moment the ball is out of play.",
+          subsections: [
+            {
+              number: "3.3.1",
+              title: "",
+              content: "If the serving team wins a rally, they score a point and continue to serve."
+            },
+            {
+              number: "3.3.2",
+              title: "",
+              content: "If the receiving team wins a rally, they score a point and must serve next."
+            }
+          ]
         },
         {
           number: "3.4",
           title: "To Win a Game",
-          content: "A game is won by the team that first scores the designated number of points (typically 15 or 21). Games must be won by two points unless otherwise specified. In the case of a 14-14 or 20-20 tie, play is continued until a 2 point lead is achieved (17-15 or 27-25). Hard cap - according to the tournament director's discretion, certain games can be given a hard cap, meaning if the score is tied at a given number, the next point wins. For example, in games with a hard cap at 25, if the score is 24 to 24, the game will be decided by the next point. Hard caps should be set before the games start."
+          content: "A game is won by the team that first scores the designated number of points (typically 15 or 21).",
+          subsections: [
+            {
+              number: "3.4.1",
+              title: "",
+              content: "Games must be won by two points unless otherwise specified. In the case of a 14-14 or 20-20 tie, play is continued until a 2 point lead is achieved (17-15 or 27-25)."
+            },
+            {
+              number: "3.4.2",
+              title: "Hard cap",
+              content: "According to the tournament director's discretion, certain games can be given a hard cap, meaning if the score is tied at a given number, the next point wins. For example, in games with a hard cap at 25, if the score is 24 to 24, the game will be decided by the next point. Hard caps should be set before the games start."
+            }
+          ]
         },
         {
           number: "3.5",
@@ -173,17 +241,112 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "3.7",
           title: "Deciding Serve/Receive",
-          content: "One game – The winner of a coin flip or one game of Rock, Paper, Scissors (determined by TD) gets to choose serve/receive or starting positions. Two game matches – In bracket play, the team with the higher seed gets to choose serve/receive, starting positions, or defer in game one. If the higher seed defers their choice, the lower seed gets to choose serve/receive or starting positions in game one. The choice of serve/receive or starting positions will switch in the second game. Three-game matches – If the match goes to a third game, there will be a coin flip or one game of Rock, Paper, Scissors (determined by TD) and the winner is awarded the choice of serve/receive or pick the starting positions in the third game."
+          content: "",
+          subsections: [
+            {
+              number: "3.7.1",
+              title: "One game",
+              content: "The winner of a coin flip or one game of Rock, Paper, Scissors (determined by TD) gets to choose serve/receive or starting positions."
+            },
+            {
+              number: "3.7.2",
+              title: "Two game matches",
+              content: "In bracket play, the team with the higher seed gets to choose serve/receive, starting positions, or defer in game one. If the higher seed defers their choice, the lower seed gets to choose serve/receive or starting positions in game one. The choice of serve/receive or starting positions will switch in the second game."
+            },
+            {
+              number: "3.7.3",
+              title: "Three-game matches",
+              content: "If the match goes to a third game, there will be a coin flip or one game of Rock, Paper, Scissors (determined by TD) and the winner is awarded the choice of serve/receive or pick the starting positions in the third game."
+            }
+          ]
         },
         {
           number: "3.8",
           title: "Positions",
-          content: "The four players start set up in four positions around the set, 90 degrees apart. Teammates are located next to each other. All players must start with all points of contact behind the service line (exception see 3.8.4). The established positions should be used for the duration of the match. The positions will be indicated by a line marking when possible. At the start of a game, the serving team sets their positions first. The player set up on the right side is the one that will begin serving. Once the serving team is set, the receiving team positions their players. The receiver is the player that is positioned 180 degrees across from the server. Once the server is set the receiver may adjust their position and is free to move anywhere without distance restrictions. Only the designated receiver can field the serve. The server's teammate is free to move from their position at any point. They do not need to return to their position on subsequent service attempts within the same point. The server's teammate must remain outside the serving line until the serve is hit and may not cross in front of the receiver or the receiver's teammate before the receiver has touched the ball. The server's teammate must maintain a minimum distance of 1.5 meters from the receiver and the receiver's partner until the receiver has touched the ball. All hinder rules are in effect (see chapter 6). The receiver's teammate is free to move from their position at any point. The receiver's teammates' movement must follow an imaginary straight line extending from the center of the court through their starting position. The receiver's teammates must remain outside the serving line until the serve is hit. Players rotate one position counterclockwise to equalize conditions each time two servers finish their turn. (i.e. after the 3rd point, 7th point, 11th point, 15th point, etc.). If a non-receiving or non-serving player moves in an illegal manner during the serving sequence, they lose the point. In the case where both non-receiving and non-serving player move illegally, the team that moved illegally first will lose the point. If the infractions happen simultaneously the point will be replayed."
+          content: "",
+          subsections: [
+            {
+              number: "3.8.1",
+              title: "",
+              content: "The four players start set up in four positions around the set, 90 degrees apart. Teammates are located next to each other. All players must start with all points of contact behind the service line (exception see 3.8.4)."
+            },
+            {
+              number: "3.8.2",
+              title: "",
+              content: "The established positions should be used for the duration of the match. The positions will be indicated by a line marking when possible."
+            },
+            {
+              number: "3.8.3",
+              title: "",
+              content: "At the start of a game, the serving team sets their positions first. The player set up on the right side is the one that will begin serving. Once the serving team is set, the receiving team positions their players."
+            },
+            {
+              number: "3.8.4",
+              title: "",
+              content: "The receiver is the player that is positioned 180 degrees across from the server. Once the server is set the receiver may adjust their position and is free to move anywhere without distance restrictions."
+            },
+            {
+              number: "3.8.5",
+              title: "",
+              content: "Only the designated receiver can field the serve."
+            },
+            {
+              number: "3.8.6",
+              title: "",
+              content: "The server's teammate is free to move from their position at any point. They do not need to return to their position on subsequent service attempts within the same point.",
+              subsections: [
+                {
+                  number: "3.8.6.1",
+                  title: "",
+                  content: "The server's teammate must remain outside the serving line until the serve is hit and may not cross in front of the receiver or the receiver's teammate before the receiver has touched the ball. The server's teammate must maintain a minimum distance of 1.5 meters from the receiver and the receiver's partner until the receiver has touched the ball. All hinder rules are in effect (see chapter 6)."
+                }
+              ]
+            },
+            {
+              number: "3.8.7",
+              title: "",
+              content: "The receiver's teammate is free to move from their position at any point.",
+              subsections: [
+                {
+                  number: "3.8.7.1",
+                  title: "",
+                  content: "The receiver's teammates' movement must follow an imaginary straight line extending from the center of the court through their starting position."
+                },
+                {
+                  number: "3.8.7.2",
+                  title: "",
+                  content: "The receiver's teammates must remain outside the serving line until the serve is hit."
+                }
+              ]
+            },
+            {
+              number: "3.8.8",
+              title: "",
+              content: "Players rotate one position counterclockwise to equalize conditions each time two servers finish their turn. (i.e. after the 3rd point, 7th point, 11th point, 15th point, etc.)."
+            },
+            {
+              number: "3.8.9",
+              title: "",
+              content: "If a non-receiving or non-serving player moves in an illegal manner during the serving sequence, they lose the point. In the case where both non-receiving and non-serving player move illegally, the team that moved illegally first will lose the point. If the infractions happen simultaneously the point will be replayed."
+            }
+          ]
         },
         {
           number: "3.9",
           title: "Time-outs",
-          content: "60-second timeouts - Teams are allotted one 60-second timeout per game. The time-out may not be called during a point. This time-out may not be called in between the 1st and 2nd serve. The teams may not leave the court area and should have refreshments or equipment stored near the court before the match. Injury timeouts – An injured player is given a maximum of 5-minutes recovery, once per match. This time-out may be called whenever the injury occurs."
+          content: "",
+          subsections: [
+            {
+              number: "3.9.1",
+              title: "60-second timeouts",
+              content: "Teams are allotted one 60-second timeout per game. The time-out may not be called during a point. This time-out may not be called in between the 1st and 2nd serve. The teams may not leave the court area and should have refreshments or equipment stored near the court before the match."
+            },
+            {
+              number: "3.9.2",
+              title: "Injury timeouts",
+              content: "An injured player is given a maximum of 5-minutes recovery, once per match. This time-out may be called whenever the injury occurs. See 3.13.1 for details."
+            }
+          ]
         },
         {
           number: "3.10",
@@ -203,7 +366,19 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "3.13",
           title: "Exceptional Interruptions",
-          content: "Injury - In the case of an injury, the game is stopped. Once the player begins to receive care (if provided), they have 5 minutes to return to play. If the player is not able to return to play before 5 minutes is up, the team must forfeit that game. If the player returns to play and is injured again, they must return to play in one minute or be subject to forfeit. Any further injury stoppage during the game that lasts more than 15 seconds between points will cause the injured player to forfeit. External interference - In the case of an external interference preventing the game to be played, the game shall pause. When the game can be resumed, the game continues at the same score, player positions, and serving order and situation (ie 1st vs 2nd serve, # of timeouts remaining, penalties/warning still in effect, etc.) as before."
+          content: "",
+          subsections: [
+            {
+              number: "3.13.1",
+              title: "Injury",
+              content: "In the case of an injury, the game is stopped. Once the player begins to receive care (if provided), they have 5 minutes to return to play. If the player is not able to return to play before 5 minutes is up, the team must forfeit that game. If the player returns to play and is injured again, they must return to play in one minute or be subject to forfeit. Any further injury stoppage during the game that lasts more than 15 seconds between points will cause the injured player to forfeit."
+            },
+            {
+              number: "3.13.2",
+              title: "External interference",
+              content: "In the case of an external interference preventing the game to be played, the game shall pause. When the game can be resumed, the game continues at the same score, player positions, and serving order and situation (ie 1st vs 2nd serve, # of timeouts remaining, penalties/warning still in effect, etc.) as before."
+            }
+          ]
         }
       ]
     },

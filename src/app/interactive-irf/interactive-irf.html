@@ -92,50 +92,7 @@
           @if (isChapterExpanded(chapter.number)) {
             <div class="chapter-body">
               @for (section of chapter.sections; track section.number) {
-                <div class="irf-rule" [id]="'section-' + section.number">
-                  <button class="rule-toggle" (click)="toggleSection(section.number)">
-                    <span class="toggle-icon">{{
-                      isSectionExpanded(section.number) ? '▼' : '▶'
-                    }}</span>
-                    <span class="rule-label">
-                      <span class="rule-number">{{ section.number }}</span>
-                      {{ section.title }}
-                    </span>
-                  </button>
-
-                  @if (isSectionExpanded(section.number)) {
-                    <div class="rule-body">
-                      @if (section.content) {
-                        <p class="rule-text">{{ section.content }}</p>
-                      }
-                      @if (section.subsections && section.subsections.length > 0) {
-                        <div class="subsections">
-                          @for (sub of section.subsections; track sub.number) {
-                            <div class="irf-subsection" [id]="'section-' + sub.number">
-                              <button
-                                class="subsection-toggle"
-                                (click)="toggleSection(sub.number)"
-                              >
-                                <span class="toggle-icon">{{
-                                  isSectionExpanded(sub.number) ? '▼' : '▶'
-                                }}</span>
-                                <span class="rule-label">
-                                  <span class="rule-number">{{ sub.number }}</span>
-                                  {{ sub.title }}
-                                </span>
-                              </button>
-                              @if (isSectionExpanded(sub.number)) {
-                                <div class="subsection-body">
-                                  <p class="rule-text">{{ sub.content }}</p>
-                                </div>
-                              }
-                            </div>
-                          }
-                        </div>
-                      }
-                    </div>
-                  }
-                </div>
+                <app-irf-rule [section]="section"></app-irf-rule>
               }
             </div>
           }

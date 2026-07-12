@@ -266,7 +266,6 @@ has until the ball is hit for a second time, there is a change of possession, or
 immediately (i.e. within ~3 seconds) after a dead ball to call “fault.” The server is
 then allocated a second serve. If a second “fault” is called, the receiving team is
 awarded a point.
-9
 4.4.2.1.1. If a fault occurs and then an infraction by the receiving team
 occurs before the ball is hit for a second time or there is a change of
 possession, the fault takes precedence over the infraction.
