@@ -394,22 +394,333 @@ export const irfRulesData: IRFRulesData = {
         {
           number: "4.2",
           title: "Serving order",
-          content: "The first server starts to the right of their partner and serves for only one point. After the first point, each team serves two points in a row and all servers start from the left of their partner. After the server's first point, they switch positions with their partner and serve to the other member of the opposing team. This sequence continues until the end of the match. If teams reach a win by two and the target score is reached (i.e. the score is 21 - 20) then each player serves for one point and players keep the same positions for the rest of the game. Order in a New Game - The process stated in 4.2.1 occurs each game so the serving order does not need to stay the same for multiple games."
+          content: "",
+          subsections: [
+            {
+              number: "4.2.1",
+              title: "",
+              content: "The first server starts to the right of their partner and serves for only one point."
+            },
+            {
+              number: "4.2.2",
+              title: "",
+              content: "After the first point, each team serves two points in a row and all servers start from the left of their partner. After the server's first point, they switch positions with their partner and serve to the other member of the opposing team. This sequence continues until the end of the match.",
+              subsections: [
+                {
+                  number: "4.2.2.1",
+                  title: "",
+                  content: "If teams reach a win by two and the target score is reached (i.e. the score is 21 - 20) then each player serves for one point and players keep the same positions for the rest of the game."
+                }
+              ]
+            },
+            {
+              number: "4.2.3",
+              title: "",
+              content: "Order in a New Game - The process stated in 4.2.1 occurs each game so the serving order does not need to stay the same for multiple games."
+            }
+          ]
         },
         {
           number: "4.3",
           title: "Characteristics of the serve",
-          content: "Before serving, the server must set their position with all points of contact behind the 7-foot service line. After setting the service position and during the act of serving – including the swing, the follow-through, and the momentum from the action – all points of contact must remain behind the service line. At least one foot must maintain the same single point of contact with the ground until the ball hits the net. Sliding or dragging a foot on the ground at any point before the ball hits the net is a violation. The server may take one step in any direction. A step is initiated the moment a foot no longer maintains a point of contact with the ground. Once the stepping foot contacts the ground again, it must establish and maintain the same single point of contact on the ground until the ball hits the net. The ball must travel at least 10 cm (4 inches) away from the point of release before it is struck. The ball cannot be released and struck with the same hand. Exception - players with physical limitations are excluded from this rule. In the act of serving, the ball must not be caught. A catch happens when the ball comes to rest on any part of the player. Serves may not be higher than a receiver's shoulder when in an athletic stance. The ball can not land on or within the No Hit Zone lines."
+          content: "",
+          subsections: [
+            {
+              number: "4.3.1",
+              title: "",
+              content: "Before serving, the server must set their position with all points of contact behind the 7-foot service line."
+            },
+            {
+              number: "4.3.2",
+              title: "",
+              content: "After setting the service position and during the act of serving – including the swing, the follow-through, and the momentum from the action – all points of contact must remain behind the service line."
+            },
+            {
+              number: "4.3.3",
+              title: "",
+              content: "At least one foot must maintain the same single point of contact with the ground until the ball hits the net."
+            },
+            {
+              number: "4.3.4",
+              title: "",
+              content: "Sliding or dragging a foot on the ground at any point before the ball hits the net is a violation."
+            },
+            {
+              number: "4.3.5",
+              title: "",
+              content: "The server may take one step in any direction.",
+              subsections: [
+                {
+                  number: "4.3.5.1",
+                  title: "",
+                  content: "A step is initiated the moment a foot no longer maintains a point of contact with the ground."
+                },
+                {
+                  number: "4.3.5.2",
+                  title: "",
+                  content: "Once the stepping foot contacts the ground again, it must establish and maintain the same single point of contact on the ground until the ball hits the net."
+                }
+              ]
+            },
+            {
+              number: "4.3.6",
+              title: "",
+              content: "The ball must travel at least 10 cm (4 inches) away from the point of release before it is struck."
+            },
+            {
+              number: "4.3.7",
+              title: "",
+              content: "The ball cannot be released and struck with the same hand. Exception - players with physical limitations are excluded from this rule."
+            },
+            {
+              number: "4.3.8",
+              title: "",
+              content: "In the act of serving, the ball must not be caught."
+            },
+            {
+              number: "4.3.9",
+              title: "",
+              content: "Serves may not be higher than a receiver's shoulder when in an athletic stance. (See 4.5.1.2.3 and 4.6.9)"
+            },
+            {
+              number: "4.3.10",
+              title: "",
+              content: "The ball can not land on or within the No Hit Zone lines."
+            }
+          ]
         },
         {
           number: "4.4",
           title: "Execution of the service",
-          content: "There are four steps to the serve: (1) The server announces the score to the receiver, placing the serving team's score before the receiving team's score and the serve number (first or second). (2) The receiver must verbally acknowledge readiness within three seconds. (3) The server must announce service within three seconds. (4) The server may begin their serving motion and has three seconds to toss the ball. Any delays in this process are subject to a delay of game violation (see 3.10). An incorrect score call may be identified by any player to reset the serving process prior to the server announcing service. Positions and Restrictions during the Serving Process: Server - After the server announces the score, the server may not step until after they announce service. Server's Teammate - At any point the server's teammate may adjust their position and are free to move. They do not need to return to their position on subsequent service attempts within the same point. They may not enter the service circle until after the ball is struck. The server's teammate is not allowed to cross in front of the receiving team and doing so will result in a loss of point. All hinder rules are in effect (see chapter 6). Serve Receiver - The serve receiver's athletic stance (i.e. shoulder height) is established upon acknowledging readiness. A receiver's athletic stance establishes their shoulder height. An athletic stance is defined by the ability to quickly move laterally and has the components of bent knees (no lower than 90 degrees), feet slightly wider than shoulder distance apart, and chest positioned over feet. If a receiver does not meet the definition of an athletic stance causing a lowered shoulder height, they must be notified before the server announces service. Upon notification, the receiver must correct their stance to an acceptable position. Failure to correct their position will result in a delay of game penalty (see 3.10). Once the receiver has acknowledged readiness they can lower their stance if desired. Serve Receiver's Teammate - At any point the serve receiver's teammate may adjust their position and are free to move. They may not enter the service circle until after the ball is struck. The receiver's teammates' movement must follow an imaginary straight line extending from the center of the court through their starting position. The server is allocated two attempts to hit a legal serve. If the server commits a service fault, only a player on the receiving team has until the ball is hit for a second time, there is a change of possession, or immediately (i.e. within ~3 seconds) after a dead ball to call fault. The server is then allocated a second serve. If a second fault is called, the receiving team is awarded a point. If a fault occurs and then an infraction by the receiving team occurs before the ball is hit for a second time or there is a change of possession, the fault takes precedence over the infraction. The receiving team may choose to play through a fault that is not actively called by an observer. However, players may never play through 4.5.10 – 4.5.13. Unless a call is made by a player or observer, the play is live. The receiving team is not required to say anything if they choose to play through a fault."
+          content: "",
+          subsections: [
+            {
+              number: "4.4.1",
+              title: "",
+              content: "There are four steps to the serve: (1) The server announces the score to the receiver, placing the serving team's score before the receiving team's score and the serve number (first or second). (2) The receiver must verbally acknowledge readiness within three seconds. (3) The server must announce service within three seconds. (4) The server may begin their serving motion and has three seconds to toss the ball. Any delays in this process are subject to a delay of game violation (see 3.10).",
+              subsections: [
+                {
+                  number: "4.4.1.1",
+                  title: "",
+                  content: "An incorrect score call may be identified by any player to reset the serving process prior to the server announcing service."
+                },
+                {
+                  number: "4.4.1.2",
+                  title: "Positions and Restrictions during the Serving Process",
+                  content: "",
+                  subsections: [
+                    {
+                      number: "4.4.1.2.1",
+                      title: "Server",
+                      content: "After the server announces the score, the server may not step until after they announce service."
+                    },
+                    {
+                      number: "4.4.1.2.2",
+                      title: "Server's Teammate",
+                      content: "At any point the server's teammate may adjust their position and are free to move. They do not need to return to their position on subsequent service attempts within the same point. They may not enter the service circle until after the ball is struck.",
+                      subsections: [
+                        {
+                          number: "4.4.1.2.2.1",
+                          title: "",
+                          content: "The server's teammate is not allowed to cross in front of the receiving team and doing so will result in a loss of point. All hinder rules are in effect (see chapter 6)."
+                        }
+                      ]
+                    },
+                    {
+                      number: "4.4.1.2.3",
+                      title: "Serve Receiver",
+                      content: "The serve receiver's athletic stance (i.e. shoulder height) is established upon acknowledging readiness.",
+                      subsections: [
+                        {
+                          number: "4.4.1.2.3.1",
+                          title: "",
+                          content: "A receiver's athletic stance establishes their shoulder height. An athletic stance is defined by the ability to quickly move laterally and has the components of bent knees (no lower than 90 degrees), feet slightly wider than shoulder distance apart, and chest positioned over feet."
+                        },
+                        {
+                          number: "4.4.1.2.3.2",
+                          title: "",
+                          content: "If a receiver does not meet the definition of an athletic stance causing a lowered shoulder height, they must be notified before the server announces service. Upon notification, the receiver must correct their stance to an acceptable position. Failure to correct their position will result in a delay of game penalty (see 3.10). Once the receiver has acknowledged readiness they can lower their stance if desired."
+                        }
+                      ]
+                    },
+                    {
+                      number: "4.4.1.2.4",
+                      title: "Serve Receiver's Teammate",
+                      content: "At any point the serve receiver's teammate may adjust their position and are free to move. They may not enter the service circle until after the ball is struck.",
+                      subsections: [
+                        {
+                          number: "4.4.1.2.4.1",
+                          title: "",
+                          content: "The receiver's teammates' movement must follow an imaginary straight line extending from the center of the court through their starting position."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              number: "4.4.2",
+              title: "",
+              content: "The server is allocated two attempts to hit a legal serve.",
+              subsections: [
+                {
+                  number: "4.4.2.1",
+                  title: "",
+                  content: "If the server commits a service fault, only a player on the receiving team has until the ball is hit for a second time, there is a change of possession, or immediately (i.e. within ~3 seconds) after a dead ball to call fault. The server is then allocated a second serve. If a second fault is called, the receiving team is awarded a point.",
+                  subsections: [
+                    {
+                      number: "4.4.2.1.1",
+                      title: "",
+                      content: "If a fault occurs and then an infraction by the receiving team occurs before the ball is hit for a second time or there is a change of possession, the fault takes precedence over the infraction."
+                    }
+                  ]
+                },
+                {
+                  number: "4.4.2.2",
+                  title: "",
+                  content: "The receiving team may choose to play through a fault that is not actively called by an observer. However, players may never play through 4.5.10 – 4.5.13. Unless a call is made by a player or observer, the play is live. The receiving team is not required to say anything if they choose to play through a fault."
+                }
+              ]
+            }
+          ]
         },
         {
           number: "4.5",
           title: "Service faults",
-          content: "The ball is struck before traveling 10 cm (4 inches) away from the point of release. After setting the service position or during the act of serving – including the swing, the follow-through, and the momentum from the action – the server makes contact on or within the service line. This includes contacting a player who is on or within the service line. It is a fault even if the ball is declared dead before the server makes contact on or within the service line. The server may only make contact on or within the service line after demonstrating the momentum from the action has stopped and reestablishing bodily control. The ball is caught. The server does not maintain one point of contact with their pivot foot until the ball hits the net. After taking a step, the server does not maintain one point of contact with their non-pivot foot until the ball hits the net. The ball hits the rim or legs directly. Side Pocket – after hitting a side third of the net, relatively parallel to the ball's incoming trajectory, the ball's horizontal trajectory changes towards the opposite side. A ball hitting within the left third of the net and moving right or a ball hitting within the right third of the net and moving left is a pocket. Left or right side of the net is determined relative to a center line parallel to the ball's horizontal entry angle. A ball hitting within the side pocket area and not moving the opposite direction is legal. After hitting the back third of the net, the ball does not move forward. Every part of the ball must land beyond the farthest point of the set relative to the ball's horizontal angle of entry. A ball that exits the back third of the net and moves sideways is legal so long as it never contacts the side sections of the net. Every part of the ball is over the highest point of the receiver's shoulders at any point from when the ball contacts the net to when the ball passes them or is contacted by the receiver, whichever happens first. If, after acknowledging readiness, the receiver lowers their shoulders, the shoulder height will be judged off their prior athletic stance. If, after acknowledging readiness, the receiver raises their shoulders, the shoulder height will be judged off their new position. The ball passes the receiver when it breaks the plane perpendicular to the line between receiver's position and the center of the net. The ball misses the set entirely. The ball contacts the set (legs, rims, net) multiple times. After the ball is served, the first contact is by a player on the serving team (i.e. a player hits their partner with the serve). The ball is released and not struck. Once the ball is released, dropping, catching or swinging at and missing a toss all count as a fault. The server does not toss the ball within three seconds after announcing service. The ball is released and struck with the same hand. Exception - players with physical limitations are excluded from this rule. The ball lands on or within the NHZ lines."
+          content: "",
+          subsections: [
+            {
+              number: "4.5.1",
+              title: "",
+              content: "The ball is struck before traveling 10 cm (4 inches) away from the point of release."
+            },
+            {
+              number: "4.5.2",
+              title: "",
+              content: "After setting the service position or during the act of serving – including the swing, the follow-through, and the momentum from the action – the server makes contact on or within the service line. This includes contacting a player who is on or within the service line.",
+              subsections: [
+                {
+                  number: "4.5.2.1",
+                  title: "",
+                  content: "It is a fault even if the ball is declared dead before the server makes contact on or within the service line."
+                },
+                {
+                  number: "4.5.2.2",
+                  title: "",
+                  content: "The server may only make contact on or within the service line after demonstrating the momentum from the action has stopped and reestablishing bodily control."
+                }
+              ]
+            },
+            {
+              number: "4.5.3",
+              title: "",
+              content: "The ball is caught. See 5.3.2."
+            },
+            {
+              number: "4.5.4",
+              title: "",
+              content: "The server does not maintain one point of contact with their pivot foot until the ball hits the net."
+            },
+            {
+              number: "4.5.5",
+              title: "",
+              content: "After taking a step, the server does not maintain one point of contact with their non-pivot foot until the ball hits the net."
+            },
+            {
+              number: "4.5.6",
+              title: "",
+              content: "The ball hits the rim or legs directly."
+            },
+            {
+              number: "4.5.7",
+              title: "Side Pockets",
+              content: "",
+              subsections: [
+                {
+                  number: "4.5.7.1",
+                  title: "",
+                  content: "Side Pocket – after hitting a side third of the net, relatively parallel to the ball's incoming trajectory, the ball's horizontal trajectory changes towards the opposite side.",
+                  subsections: [
+                    {
+                      number: "4.5.7.1.1",
+                      title: "",
+                      content: "A ball hitting within the left third of the net and moving right or a ball hitting within the right third of the net and moving left is a pocket."
+                    },
+                    {
+                      number: "4.5.7.1.2",
+                      title: "",
+                      content: "Left or right side of the net is determined relative to a center line parallel to the ball's horizontal entry angle."
+                    },
+                    {
+                      number: "4.5.7.1.3",
+                      title: "",
+                      content: "A ball hitting within the side pocket area and not moving the opposite direction is legal."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              number: "4.5.8",
+              title: "",
+              content: "After hitting the back third of the net, the ball does not move forward. Every part of the ball must land beyond the farthest point of the set relative to the ball's horizontal angle of entry.",
+              subsections: [
+                {
+                  number: "4.5.8.1",
+                  title: "",
+                  content: "A ball that exits the back third of the net and moves sideways is legal so long as it never contacts the side sections of the net."
+                }
+              ]
+            },
+            {
+              number: "4.5.9",
+              title: "",
+              content: "Every part of the ball is over the highest point of the receiver's shoulders at any point from when the ball contacts the net to when the ball passes them or is contacted by the receiver, whichever happens first. If, after acknowledging readiness, the receiver lowers their shoulders, the shoulder height will be judged off their prior athletic stance. If, after acknowledging readiness, the receiver raises their shoulders, the shoulder height will be judged off their new position.",
+              subsections: [
+                {
+                  number: "4.5.9.1",
+                  title: "",
+                  content: "The ball passes the receiver when it breaks the plane perpendicular to the line between receiver's position and the center of the net."
+                }
+              ]
+            },
+            {
+              number: "4.5.10",
+              title: "",
+              content: "The ball misses the set entirely."
+            },
+            {
+              number: "4.5.11",
+              title: "",
+              content: "The ball contacts the set (legs, rims, net) multiple times."
+            },
+            {
+              number: "4.5.12",
+              title: "",
+              content: "After the ball is served, the first contact is by a player on the serving team (i.e. a player hits their partner with the serve)."
+            },
+            {
+              number: "4.5.13",
+              title: "",
+              content: "The ball is released and not struck. Once the ball is released, dropping, catching or swinging at and missing a toss all count as a fault."
+            },
+            {
+              number: "4.5.14",
+              title: "",
+              content: "The server does not toss the ball within three seconds after announcing service."
+            },
+            {
+              number: "4.5.15",
+              title: "",
+              content: "The ball is released and struck with the same hand. Exception - players with physical limitations are excluded from this rule."
+            },
+            {
+              number: "4.5.16",
+              title: "",
+              content: "The ball lands on or within the NHZ lines."
+            }
+          ]
         }
       ]
     },
