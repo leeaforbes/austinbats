@@ -1,77 +1,41 @@
-<div class="top-section section text-shadow-black bg-image-cover text-left">
-    <div class="hstack center pad float-enter">
-        <div class="vstack center" style="width: 500px; gap: 5px;">
-            <div class="hstack">
-                <h1>WE COMPETE</h1>
-            </div>
-            <div class="hstack apart">
-                <div>🔳 PRL @ Orlando, FL</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Jan 29 + 30, 2027</div>
-            </div>
-            <div class="hstack apart">
-                <div>🔳 TASR Texas Nationals @ Dallas, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Dec 5, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>🔳 TASR @ College Station, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Nov 7, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>🔳 PRL @ Dallas, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Oct 10, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>🔳 TASR @ Waco, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Sept 26, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>🔳 TASR @ Austin, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Sept 12, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>🔳 PRL @ Richmond, VA</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Aug 1, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ PRL @ Las Vegas, NV</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Jun 27, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ TASR @ Dallas, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Apr 11, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ TASR @ Waco, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Mar 28, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ TASR @ College Station, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Feb 28, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ TASR @ Austin, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Feb 21, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ PRL Playoffs @ Orlando, FL</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Jan 30 + 31, 2026</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ PRL Regional @ Stillwater, OK</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Nov 8, 2025</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ PRL @ Austin, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Oct 18, 2025</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ PRL @ Houston, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Sept 27, 2025</div>
-            </div>
-            <div class="hstack apart">
-                <div>✅ PRL @ College Station, TX</div>
-                <div class="vstack center" style="font-size: 0.8rem;">Sept 6, 2025</div>
-            </div>
+<div class="top-section section text-shadow-black bg-image-cover">
+    <div class="vstack center float-enter" style="padding: 15px;">
+        <h1>WE COMPETE</h1>
+
+        <div class="schedule-container">
+
+            <div class="schedule-section-label">UPCOMING EVENTS</div>
+
+            @for (evt of upcomingEvents; track evt.date) {
+                <div class="event-card">
+                    <span class="league-badge" [class.badge-prl]="evt.host === 'PRL'" [class.badge-tasr]="evt.host === 'TASR'">
+                        {{ evt.host }}
+                    </span>
+                    <div class="event-info">
+                        @if (evt.event) {<div class="event-name">{{ evt.event }}</div>}
+                        <div class="event-city">{{ evt.city }}</div>
+                        <div class="event-date">{{ evt.displayDate }}</div>
+                    </div>
+                    @if (evt.link) {<a [href]="evt.link" target="_blank" class="event-btn">View →</a>}
+                </div>
+            }
+
+            <div class="schedule-section-label" style="margin-top: 32px;">PAST EVENTS</div>
+
+            @for (evt of completedEvents; track evt.date) {
+                <div class="event-card">
+                    <span class="league-badge" [class.badge-prl]="evt.host === 'PRL'" [class.badge-tasr]="evt.host === 'TASR'">
+                        {{ evt.host }}
+                    </span>
+                    <div class="event-info">
+                        @if (evt.event) {<div class="event-name">{{ evt.event }}</div>}
+                        <div class="event-city">{{ evt.city }}</div>
+                        <div class="event-date">{{ evt.displayDate }}</div>
+                    </div>
+                    @if (evt.link) {<a [href]="evt.link" target="_blank" class="event-btn">View →</a>}
+                </div>
+            }
+
         </div>
     </div>
 </div>

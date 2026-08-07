@@ -1,0 +1,123 @@
+[
+  {
+    "host": "PRL",
+    "event": "Matchday 3 + Playoffs",
+    "city": "Orlando, FL",
+    "date": "2027-01-29",
+    "endDate": "2027-01-30",
+    "link": "https://proroundnet.com/2026/playoffs"
+  },
+  {
+    "host": "TASR",
+    "event": "NA Tour Series",
+    "city": "Dallas, TX",
+    "date": "2026-12-05",
+    "link": ""
+  },
+  {
+    "host": "TASR",
+    "event": "",
+    "city": "College Station, TX",
+    "date": "2026-11-07",
+    "link": ""
+  },
+  {
+    "host": "PRL",
+    "event": "Texas Conference",
+    "city": "Dallas, TX",
+    "date": "2026-10-10",
+    "link": "https://proroundnet.com/2026/matchday-2"
+  },
+  {
+    "host": "TASR",
+    "event": "",
+    "city": "Waco, TX",
+    "date": "2026-09-26",
+    "link": ""
+  },
+  {
+    "host": "TASR",
+    "event": "",
+    "city": "Austin, TX",
+    "date": "2026-09-12",
+    "link": "https://fwango.io/tasr-austin-fall-2026"
+  },
+  {
+    "host": "PRL",
+    "event": "Super Regional",
+    "city": "Richmond, VA",
+    "date": "2026-08-01",
+    "link": "https://proroundnet.com/2026/matchday-1"
+  },
+  {
+    "host": "PRL",
+    "event": "Super Regional",
+    "city": "Las Vegas, NV",
+    "date": "2026-06-27",
+    "link": "https://proroundnet.com/2026/matchday-1"
+  },
+  {
+    "host": "TASR",
+    "event": "NA Tour Series",
+    "city": "Dallas, TX",
+    "date": "2026-04-11",
+    "link": "https://fwango.io/natsdallas26"
+  },
+  {
+    "host": "TASR",
+    "event": "",
+    "city": "Waco, TX",
+    "date": "2026-03-28",
+    "link": "https://fwango.io/tasr-waco-spring-26"
+  },
+  {
+    "host": "TASR",
+    "event": "",
+    "city": "College Station, TX",
+    "date": "2026-02-28",
+    "link": "https://fwango.io/tasr-collegestation-spring-26"
+  },
+  {
+    "host": "TASR",
+    "event": "Austin Spike Weekend",
+    "city": "Austin, TX",
+    "date": "2026-02-21",
+    "link": "https://fwango.io/tasr-austin-spring-26"
+  },
+  {
+    "host": "PRL",
+    "event": "Playoffs",
+    "city": "Orlando, FL",
+    "date": "2026-01-30",
+    "endDate": "2026-01-31",
+    "link": "https://proroundnet.com/2026playoffs/"
+  },
+  {
+    "host": "PRL",
+    "event": "Regional",
+    "city": "Stillwater, OK",
+    "date": "2025-11-08",
+    "link": ""
+  },
+  {
+    "host": "PRL",
+    "event": "",
+    "city": "Austin, TX",
+    "date": "2025-10-18",
+    "link": ""
+  },
+  {
+    "host": "PRL",
+    "event": "",
+    "city": "Houston, TX",
+    "date": "2025-09-27",
+    "link": ""
+  },
+  {
+    "host": "PRL",
+    "event": "",
+    "city": "College Station, TX",
+    "date": "2025-09-06",
+    "link": ""
+  }
+]
