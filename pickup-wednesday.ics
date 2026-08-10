@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Austin Bats Roundnet//Pickup//EN
+BEGIN:VEVENT
+SUMMARY:Austin Bats Pickup @ Zilker Park
+DESCRIPTION:Roundnet pickup at Zilker Park. All skill levels welcome!
+LOCATION:Zilker Park, Austin, TX
+DTSTART;TZID=America/Chicago:20260812T163000
+DTEND;TZID=America/Chicago:20260812T183000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+END:VEVENT
+END:VCALENDAR
