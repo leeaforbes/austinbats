@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+MSG="${1:-}"
+if [ -z "$MSG" ]; then
+  echo "Usage: ./autodeploy \"commit message\""
+  exit 1
+fi
+
+npx ng build
+
+git add .
+if git diff --cached --quiet; then
+  echo "No changes to commit; skipping commit."
+else
+  git commit -m "$MSG"
+fi
+
+git push
+
+# --cname writes the CNAME file to gh-pages so austinbats.club stays set
+npx ng deploy --cname=austinbats.club
